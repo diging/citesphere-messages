@@ -6,6 +6,8 @@ public class KafkaImportReturnMessage {
 
     private ItemCreationResponse zoteroResponse;
     private String jobId;
+    private Status status;
+    private ResponseCode code;
     
     @JsonCreator
     public KafkaImportReturnMessage() {
@@ -29,6 +31,22 @@ public class KafkaImportReturnMessage {
     }
     public void setJobId(String jobId) {
         this.jobId = jobId;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public ResponseCode getCode() {
+        return code;
+    }
+
+    public void setCode(ResponseCode code) {
+        this.code = code;
     }
     
 }
