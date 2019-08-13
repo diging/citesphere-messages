@@ -21,7 +21,11 @@ public enum ResponseCode {
     /**
      * Download from Citesphere failed.
      */
-    X20("Citesphere download failed.");
+    X20("Citesphere download failed."),
+    /**
+     * File format cannot be handled.
+     */
+    X30("Unkown file format.");
     
     private String message;
     
