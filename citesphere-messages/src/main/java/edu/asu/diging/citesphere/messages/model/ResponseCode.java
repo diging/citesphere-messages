@@ -15,6 +15,14 @@ public enum ResponseCode {
      */
     P00("Processing"),
     /**
+     * An error occured but processing might still have finished successfully.
+     */
+    W10("An error occured but processing might still have finished successfully."),
+    /**
+     * Request could not be processed due to an internal error.
+     */
+    X00("Request could not be processed due to an internal error."),
+    /**
      * Authentication with Citesphere failed.
      */
     X10("Citesphere authentication failed."),
@@ -25,7 +33,12 @@ public enum ResponseCode {
     /**
      * File format cannot be handled.
      */
-    X30("Unkown file format.");
+    X30("Unkown file format."),
+    /**
+     * Communication with Zotero failed.
+     */
+    X40("Communication with Zotero failed.")
+    ;
     
     private String message;
     
