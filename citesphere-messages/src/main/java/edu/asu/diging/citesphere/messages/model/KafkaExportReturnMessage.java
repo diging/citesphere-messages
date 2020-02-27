@@ -1,11 +1,13 @@
 package edu.asu.diging.citesphere.messages.model;
 
-public class KafkaExportReturnMessage {
+public class KafkaExportReturnMessage implements KafkaReturnMessage {
 
     private String username;
     private String jobId;
     private Status status;
     private ResponseCode code;
+    
+    public KafkaExportReturnMessage() {}
     
     public KafkaExportReturnMessage(String username, String jobId) {
         super();
