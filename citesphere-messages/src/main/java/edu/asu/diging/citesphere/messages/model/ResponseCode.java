@@ -11,6 +11,10 @@ public enum ResponseCode {
      */
     S00("Success"),
     /**
+     * Data is out of date and needs to be synced first. Please retry. 
+     */
+    P10("Syncing"),
+    /**
      * Requested action is being processed. 
      */
     P00("Processing"),
@@ -37,7 +41,11 @@ public enum ResponseCode {
     /**
      * Communication with Zotero failed.
      */
-    X40("Communication with Zotero failed.")
+    X40("Communication with Zotero failed."),
+    /**
+     * Group does not exist.
+     */
+    X50("Group does not exist.")
     ;
     
     private String message;
